@@ -1,3 +1,8 @@
+<script setup>
+import navBar from "@/components/navBar.vue";
+</script>
+
 <template>
-  <h1 class="text-red-500">View jobs</h1>
+  <navBar />
+  <!-- <h1 class="text-red-500">View jobs</h1> -->
 </template>
