@@ -17,7 +17,7 @@ console.log(jobs.value); // Check that it logs the jobs array
 <template>
   <section class="bg-blue-50 px-4 py-10">
     <div class="container-xl lg:container m-auto">
-      <h2 class="text-3xl font-bold text-green-500 mb-6 text-center">
+      <h2 class="text-3xl font-bold text-indigo-500 mb-6 text-center">
         Browse jobs
       </h2>
       <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
