@@ -1,5 +1,6 @@
 <script setup>
 import Card from "./Card.vue";
+import { RouterLink } from "vue-router";
 </script>
 <template>
   <section class="py-4">
@@ -11,12 +12,12 @@ import Card from "./Card.vue";
           <p class="mt-2 mb-4">
             Browse our Vue jobs and start your career today
           </p>
-          <a
-            href="jobs.html"
+          <RouterLink
+            to="/jobs"
             class="inline-block bg-black text-white rounded-lg px-4 py-2 hover:bg-gray-700"
           >
             Browse Jobs
-          </a></Card
+          </RouterLink></Card
         >
         <!-- </div> -->
         <!-- <div class="bg-green-100 p-6 rounded-lg shadow-md"> -->
@@ -25,12 +26,12 @@ import Card from "./Card.vue";
           <p class="mt-2 mb-4">
             List your job to find the perfect developer for the role
           </p>
-          <a
-            href="add-job.html"
+          <RouterLink
+            to="/jobs/add"
             class="inline-block bg-indigo-500 text-white rounded-lg px-4 py-2 hover:bg-indigo-600"
           >
             Add Job
-          </a></Card
+          </RouterLink></Card
         >
         <!-- </div> -->
       </div>
