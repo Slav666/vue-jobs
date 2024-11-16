@@ -3,7 +3,7 @@ import logo from "@/assets/img/logo.png";
 </script>
 
 <template>
-  <nav class="bg-green-700 border-b border-green-500">
+  <nav class="bg-gray-500 border-b border-black">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
       <div class="flex h-20 items-center justify-between">
         <div
@@ -20,17 +20,17 @@ import logo from "@/assets/img/logo.png";
             <div class="flex space-x-2">
               <a
                 href="index.html"
-                class="text-white bg-green-900 hover:bg-gray-900 hover:text-white rounded-md px-3 py-2"
+                class="text-white bg-black hover:bg-gray-700 hover:text-white rounded-md px-3 py-2"
                 >Home</a
               >
               <a
                 href="jobs.html"
-                class="text-white hover:bg-green-900 hover:text-white rounded-md px-3 py-2"
+                class="text-white hover:bg-black hover:text-white rounded-md px-3 py-2"
                 >Jobs</a
               >
               <a
                 href="add-job.html"
-                class="text-white hover:bg-green-900 hover:text-white rounded-md px-3 py-2"
+                class="text-white hover:bg-black hover:text-white rounded-md px-3 py-2"
                 >Add Job</a
               >
             </div>
