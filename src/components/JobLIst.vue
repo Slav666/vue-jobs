@@ -2,6 +2,7 @@
 import jobsData from "@/jobs.json"; // Import JSON
 import { ref, defineProps } from "vue"; // Import ref for reactivity
 import JobSingle from "./JobSingle.vue";
+import { RouterLink } from "vue-router";
 
 const jobs = ref(jobsData.jobs);
 defineProps({
@@ -23,7 +24,7 @@ console.log(jobs.value); // Check that it logs the jobs array
       <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
         <!-- <JobSingle>{{ job.title }}</JobSingle> -->
         <JobSingle
-          v-for="job in jobs.slice(0, limit || limit.length)"
+          v-for="job in jobs.slice(0, limit || jobs.length)"
           :key="job.id"
           :job="job"
         />
@@ -31,10 +32,10 @@ console.log(jobs.value); // Check that it logs the jobs array
     </div>
   </section>
   <section class="m-auto max-w-lg my-10 px-6" v-if="shawButton">
-    <a
-      href="/jobs"
+    <RouterLink
+      to="/jobs"
       class="block bg-black text-white text-center py-4 px-6 rounded-xl hover:bg-gray-700"
-      >View All Jobs</a
+      >View All Jobs</RouterLink
     >
   </section>
 </template>
