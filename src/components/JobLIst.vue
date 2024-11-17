@@ -1,12 +1,11 @@
 <script setup>
 // import jobsData from "@/jobs.json"; // Import JSON
-import { ref, defineProps, onMounted, reactive } from "vue"; // Import ref for reactivity
+import { ref, defineProps, onMounted, reactive } from "vue";
 import JobSingle from "./JobSingle.vue";
 import { RouterLink } from "vue-router";
 import PulseLoader from "vue-spinner/src/PulseLoader.vue";
 import axios from "axios";
 
-// const jobs = ref(jobsData.jobs);
 defineProps({
   limit: Number,
   shawButton: {
@@ -22,7 +21,7 @@ const state = reactive({
 
 onMounted(async () => {
   try {
-    const response = await axios.get("http://localhost:8000/jobs");
+    const response = await axios.get("/api/jobs");
     state.jobs = response.data;
   } catch (error) {
     console.error("Error fetching jobs", error);
@@ -30,8 +29,6 @@ onMounted(async () => {
     state.isLoading = false;
   }
 });
-
-// console.log(jobs.value); // Check that it logs the jobs array
 </script>
 
 <template>
