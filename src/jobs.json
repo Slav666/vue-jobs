@@ -83,34 +83,6 @@
         "contactEmail": "contact@ipsumlorem.com",
         "contactPhone": "555-555-5555"
       }
-    },
-    {
-      "id": "dde6",
-      "title": "Test",
-      "type": "Part-Time",
-      "location": "Edinburgh",
-      "description": "test description",
-      "salary": "$60K - $70K",
-      "company": {
-        "name": "Astro",
-        "description": "data visualisation on the map",
-        "contactEmail": "slawomirdyk@gmail.com",
-        "contactPhone": "07763487978"
-      }
-    },
-    {
-      "id": "9dbd",
-      "title": "Car mechanic",
-      "type": "Full-Time",
-      "location": "Edinburgh",
-      "description": "Test",
-      "salary": "$60K - $70K",
-      "company": {
-        "name": "Astro",
-        "description": "yty",
-        "contactEmail": "slawomirdyk@gmail.com",
-        "contactPhone": "07763487978"
-      }
     }
   ]
 }
