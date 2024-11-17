@@ -37,12 +37,11 @@ onMounted(async () => {
       <h2 class="text-3xl font-bold text-indigo-500 mb-6 text-center">
         Browse jobs
       </h2>
-      <!-- Loading spinner -->
+
       <div v-if="state.isLoading" class="text-center text-gray-500 py-6">
         <PulseLoader />
       </div>
       <div v-else class="grid grid-cols-1 gap-6 md:grid-cols-3">
-        <!-- <JobSingle>{{ job.title }}</JobSingle> -->
         <JobSingle
           v-for="job in state.jobs.slice(0, limit || state.jobs.length)"
           :key="job.id"

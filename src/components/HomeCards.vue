@@ -6,7 +6,6 @@ import { RouterLink } from "vue-router";
   <section class="py-4">
     <div class="container-xl lg:container m-auto">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 rounded-lg">
-        <!-- <div class="bg-gray-100 p-6 rounded-lg shadow-md"> -->
         <Card bg=""
           ><h2 class="text-2xl font-bold">For Developers</h2>
           <p class="mt-2 mb-4">
@@ -19,8 +18,6 @@ import { RouterLink } from "vue-router";
             Browse Jobs
           </RouterLink></Card
         >
-        <!-- </div> -->
-        <!-- <div class="bg-green-100 p-6 rounded-lg shadow-md"> -->
         <Card bg="bg-gray-200"
           ><h2 class="text-2xl font-bold">For Employers</h2>
           <p class="mt-2 mb-4">
@@ -33,7 +30,6 @@ import { RouterLink } from "vue-router";
             Add Job
           </RouterLink></Card
         >
-        <!-- </div> -->
       </div>
     </div>
   </section>
